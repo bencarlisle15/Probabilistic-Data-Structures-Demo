@@ -1,0 +1,1 @@
+docker kill demo_client; docker rm demo_client

@@ -1,0 +1,16 @@
+version: "3.5"
+services:
+  server:
+    build: ./Server
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - struct-net 
+  client:
+    build: ./Client
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - struct-net 
+networks:
+  struct-net:

@@ -1,0 +1,1 @@
+docker kill demo_server; docker rm demo_server
