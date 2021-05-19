@@ -6,8 +6,14 @@ services:
       - PYTHONUNBUFFERED=1
     networks:
       - struct-net 
-  client:
-    build: ./Client
+  semihonest:
+    build: ./SemiHonest
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - struct-net
+  malicious:
+    build: ./Malicious
     environment:
       - PYTHONUNBUFFERED=1
     networks:
